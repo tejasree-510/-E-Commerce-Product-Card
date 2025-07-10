@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link 
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/css?family=Muli"
+    />
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: "muli";
+        }
+        .root{
+            width: 800px;
+            height: 600px;
+            display: flex;
+            background: url(/bg.png);
+            align-items: center;
+            justify-content: center;
+            background-color: #252831;
+        }
+        .product{
+            width: 600px;
+            height:400px;
+          
+            display: flex;
+            background-color: #2a2f40;
+        }
+        .left{
+            width: 75%;
+            height: 100%;
+           
+            border-radius: 0px 50% 50% 0px;
+            background-color: rgb(214, 93, 49);
+           position: relative;
+        }
+        .shoe{
+            width: 390px;
+            position: absolute;
+            top: 50px;
+            left:-65px;
+           
+        }
+    
+        .right{
+            width: 45%;
+           
+            padding: 25px;
+        }
+        .content{
+            margin-top: 80px;
+        }
+        .logo{
+           color: rgb(214, 93, 49); 
+           font-size: 23px;
+           font-weight: 600;
+        }
+       .winter{
+        font-size: 20px;
+       }
+       .men{
+        font-size: 28px;
+        font-weight: 600;
+       }
+       .price{
+        display: flex;
+        gap: 35px;
+         margin-bottom: 20px;
+        margin-top: 20px;
+       }
+       .price1{
+        font-size: 20px;
+        font-weight: 600;
+       }
+       .price2{
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: line-through;
+        text-decoration-color: red;
+       }
+       .size{
+        display: flex;
+        gap: 25px;
+        align-items: center;
+       }
+       .size-num span{
+        margin-right: 29px;
+       }
+       .s{
+        font-size: 12px;
+       }
+       .color{
+        display: flex;
+        align-items: center;
+        gap: 40px; 
+        margin-top: 25px;
+       }
+       .color-box{
+        display: flex;
+        gap: 35px;
+       }
+       .yellow{
+        width: 15px;
+        height: 15px;
+        background-color: yellow;
+        border-radius: 50%;
+       }
+       .black{
+        width: 15px;
+        height: 15px;
+        background-color: black;
+        border-radius: 50%;
+       }
+       .blue{
+        width: 15px;
+        height: 15px;
+        background-color: skyblue;
+        border-radius: 50%;
+       }
+       .wm{
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+       }
+       .footer{
+        display: flex;
+        gap: 50px;
+        margin-left: 20px;
+        margin-top: 20px;
+       }
+       .footer span{
+        
+        font-size: 12px;
+       }
+      
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="product">
+            <div class="left">
+            <img class="shoe" src="shoe.png" alt=""></div>
+            <div class="right">
+            <span class="logo">Airmax</span>
+            <div class="content">
+               <div class="wm">
+                 <span class="winter">Winter Collection</span><br>
+                <span class="men">Men Black Sneakers</span>
+               </div>
+                <div class="price">
+                    <span class="price1">150</span>
+                    <span class="price2">200</span>
+                </div>
+                <div class="size">
+                <span class="s">SIZE</span>
+                <div class="size-num">
+                    <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
+                </div>
+                </div>
+                <div class="color">
+                    <span class="s">COLOR</span>
+                    <div class="color-box">
+                        <div class="yellow"></div>
+                        <div class="black"></div>
+                        <div class="blue"></div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <span>Buy Now</span>
+                    <span>Add To Cart</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
